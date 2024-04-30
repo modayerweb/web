@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+@font-face {
+  font-family: 'AdiHaus';
+  src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body, html { 
+  min-width: 100%;
+  min-height: 100vh;
+  background:#E7E6DD;
+  margin: 0;
+  font-family: AdiHaus;
+}
+
+body {
+  display: flex;
+}
+
+.all-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#logo {
+  margin: 15px auto;
+  display: block;
+}
+
+#athlete-mobile {
+display:none;
+  background: url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat right top;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.all-content-container {
+  padding: 20px 30px;
+}
+
+.text-content-container {
+  width: 100%;
+  text-align: center;
+}
+
+h2, p {
+   margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 28px;
+  margin: 20px 0 40px;
+  color: #333333;
+}
+
+h2:nth-of-type(1) {
+  color: #CD3A24;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h2:nth-of-type(2) {
+  color: #423A3A
+}
+
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 0 20px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 20%;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: black;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  border: none;
+}
+
+.desktop-image {
+  display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+  body {
+    background: #E7E6DD;
+    background-size: cover;
+  }
+  
+  .all-container {
+    width: 50%;
+  }  
+  .text-content-container {
+        text-align: left;
+        
+  }
+  #athlete-mobile {
+    display: none;
+  }  
+  #logo {
+    margin: 30px 30px 100px;
+    display: block;
+  }
+  .desktop-image {
+    display: block;
+    width: 50%;
+    background: url('https://images.unsplash.com/photo-1556304044-0699e31c6a34?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+  }
+  
+  h2 {
+    font-size: 48px;
+  }
+
+}
+</style>
+<body>
+
+<div class="all-container">
+  <img  width="100px" id="logo" src="https://cdn.dsmcdn.com/seller-store/uploads/946583/de9b5f76-52d6-4109-b8e9-1afa767463ef.png"> 
+  <div id="athlete-mobile">
+
+  </div>
+  <div class="all-content-container">
+    <div class="text-content-container">
+      <h2>ModaYer </h2>
+      <h2>Çok Yakında</h2>
+      <p>Merhaba! Şu anda yeni çanta ve konfor giyim mağazamızı inşa ediyoruz. Duyurular ve lansman önerilerimizden haberdar olmak için e-posta adresinizi aşağıya ekleyin.</p>
+    </div>
+    <form>
+      <input type="text" placeholder="Email Adresiniz">
+      <input type="submit" value="Gönder">
+    </form>
+  </div>
+</div>
+<div class="desktop-image">
+  
+</div>
+
+</body>
+</html>
